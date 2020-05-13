@@ -2,15 +2,47 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno Luiz Bender Loss</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body{
-            background: rgb(0, 34, 64);
+            background-image: linear-gradient(to right, rgb(0, 34, 64), rgb(15, 14, 44) 90%);
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        @media (min-width: 400px) {
+            body{
+                font-size: 14px;
+            }
+            .menu a{
+                display: block;
+                padding: 15px 20px;
+            }
+        }
+        @media (min-width: 900px) {
+            body{
+                font-size: 18px;
+            }
+        }
+        header{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .menu{
             background-color: rgb(20, 64, 74);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 3px 2px 3px rgb(5, 26, 44);
         }
         .menu li{
             list-style: none;
@@ -20,20 +52,29 @@
             justify-content: space-around;
         }
 
-        a{
+        .menu a{
+            transition: 0.3s;
             text-decoration: none;
             color: rgb(0, 34, 64);
             font-family: Arial Bold;       
         }
-        a:hover{
+        .menu a:hover{
             color: teal;
-            transition: 0.3s;
+            transition: .3s;
             text-decoration: underline;
+            background-color: rgb(0, 25, 40);
+            box-shadow: 1px 1px 3px black;
+        }
+        .menu a{
+            display: block;
+            padding: 10px 20px;
         }
 
         .site-title{
             text-align: center;
             color: rgb(20, 64, 74);
+            margin-top: 10px;
+            font-size: 3em;
         }
         .site-subtitle{
             text-align: center;
@@ -41,11 +82,9 @@
             font-style: italic;
         }
 
-        .uhu{
-            display: block;
-	        padding-top: 5px;
-            margin-top: -10px;
-            padding-left: 5px;
+        .img-port{
+            width: 180px;
+            height: 180px;
         }
     </style>
 </head>
@@ -58,8 +97,17 @@
                 <li> <a href="#"><b>Contato</b></a></li>
             </ul>
         </nav>
-        <h1 class="site-title">Bruno Luiz Bender Loss</h1>
-        <h2 class="site-subtitle">Estudante</h2>
+        <div class="center_horizontal_text">
+            <h1 class="site-title">Bruno Luiz Bender Loss</h1>
+            <h2 class="site-subtitle">Estudante</h2>
+        </div>
     </header>
+    <section>
+        <h2>Portfólio</h2>
+        <figure>
+            <img class="img-port" src="img/img-sol.jpg" alt="uhu"/>
+            <figcaption>uhu</figcaption>
+        </figure>
+    </section>
 </body>
 </html>
