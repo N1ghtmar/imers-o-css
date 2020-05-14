@@ -1,0 +1,219 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(0, 34, 64), rgb(15, 14, 44) 90%);
+    font-family: 'Baloo 2', cursive;
+    font-size: 10px;
+}
+@media (min-width: 200px) {
+    ul.img-port{
+        justify-content: none;
+    }
+    ul.img-port li{
+        height:100px;
+        width: 100px;
+    }
+    ul.img-port li#img01:hover {
+    background-position: 0px 0px;
+    background-size: 100px 100px;
+}
+}
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+    .menu a{
+        display: block;
+        padding: 15px 20px;
+    }
+    .site-title{
+        font-size: 4px;
+    }
+    ul.img-port{
+        justify-content: space-around;
+    }
+    ul.img-port li{
+        height:150px;
+        width: 150px;
+    }
+    ul.img-port li#img01:hover {
+    background-position: 0px 0px;
+    background-size: 150px 150px;
+}
+}
+@media (min-width: 900px) {
+    body{
+        font-size: 18px;
+    }
+    .site-title{
+        font-size: 8px;
+    }
+    ul.img-port li{
+        height:200px;
+        width: 200px;
+    }
+}
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Menu*/
+.menu{
+    background-color: rgb(20, 64, 74);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 3px 2px 3px rgb(5, 26, 44);
+}
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a{
+    transition: 0.3s;
+    text-decoration: none;
+    color: rgb(0, 34, 64);
+    font-family: Arial Bold;       
+}
+.menu a:hover{
+    color: teal;
+    transition: .3s;
+    text-decoration: underline;
+    background-color: rgb(0, 25, 40);
+    box-shadow: 1px 1px 3px black;
+}
+.menu a{
+    display: block;
+    padding: 10px 20px;
+}
+
+.site-title{
+    text-align: center;
+    color: rgb(20, 64, 74);
+    margin-top: 10px;
+    font-size: 3em;
+    font-family: Arial;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.site-subtitle{
+    text-align: center;
+    color: rgb(20, 64, 74);
+    font-style: italic;
+    font-size: medium;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.4;
+}
+
+/* Portfólio ;) */
+.portfolio h2{
+    font-family: 'Merriweather', serif;
+    color: rgb(20, 64, 74);
+    text-align: center;
+}
+.portfolio .grid{
+    display: grid;
+    gap: 1em;
+}
+ul.img-port{
+    display: flex;
+    margin: 0 0;
+    padding-top: 50px;
+    padding: 10px;
+    overflow: hidden;
+    list-style: none;
+    height: 50vh;
+    width: auto;
+    justify-content: center;
+}
+ul.img-port li{
+    float: left;
+    margin: 40px 10px 10px 10px;
+    border: 5px solid rgb(20, 64, 74);
+    background-color: rgb(0, 34, 64);
+    box-shadow: 1px 1px 3px black;
+    transition: .3s;
+}
+ul.img-port li span{
+    opacity: 0;
+    color: whitesmoke;
+    background-color: rgba(0,0,0,.3);
+    line-height: 30px;
+    padding: 5px;
+}
+ul.img-port li:hover{
+    -webkit-transform: scale(1.5);
+    transition: .3s;
+}
+ul.img-port li:hover span{
+    opacity: 1;
+}
+ul.img-port li#img01 {
+    background: url('../img/CardGamev1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul.img-port li#img01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul.img-port li#img02 {
+    background: url('../img/CardGamev2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul.img-port li#img02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul.img-port li#img03 {
+    background: url('../img/ficahsRPG.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul.img-port li#img03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul.img-port li#img04 {
+    background: url('../img/umGato.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffffff
+}
+
+ul.img-port li#img04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/*Sobre*/
+section.sobre{
+    height: 50em;
+    width: auto;
+    color: rgb(20, 64, 70);
+}
+section.sobre h2{
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    text-align: center;
+}
